@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <link rel="icon" href="thinking.ico">
+    <html lang="en">
+    <head>
+        <title>Bruh?</title>
+    </head>
+    <body>
+        <style>
+            .help {cursor: help;}
+            .center {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+        </style>
+        <audio id="myAudio">
+            <source src="bruhsound.mp3" type="audio/mpeg">
+        </audio>
+
+        <div class="center">
+            <p class="help" style="text-align:center;"><img src="bruhimage.png" alt="bruh" onclick="playAudio()"></p>            
+        </div>
+        <script>
+            var x = document.getElementById("myAudio"); 
+            function playAudio() { 
+                x.play(); 
+            }
+        </script>
+    </body>
+</html>
+
